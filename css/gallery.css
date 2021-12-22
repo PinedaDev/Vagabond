@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+/*Fonts
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto Mono', monospace;
+*/
+
+body {
+    background: rgb(41, 39, 39);
+    margin: 0;
+}
+/*Navegation var styles*/
+.nav-var {
+    background:rgb(29, 28, 28);
+    border: none;
+    }
+
+    .nav-var a {
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    margin-left:8px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+    }
+
+    .nav-var a:hover {
+    color: rgb(255, 30, 30);
+    }
+
+    .nav-var a.main-link {
+    font-family: 'Permanent Marker', cursive;
+    margin-right: 10em;
+    font-size: 2.6em;
+    text-shadow: 2px 2px rgba(0,0,0,.4);
+    padding-left: 2cm;
+    color: rgb(255, 30, 30);
+    text-transform: none;
+    text-decoration: none;
+    }
+    .nav-var a.main-link:hover {
+    text-transform: none;
+    color: rgb(190, 33, 33);
+    text-shadow: 2px 2px rgba(0,0,0,.4);
+    }
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(0,0,0,.4);
+    color: white;
+    font-size: 30px;
+}
+/* Grid-Container */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 8fr 8fr;
+    grid-template-areas:
+    "main main yum-yum   yum-yum"
+    "main main foot-left foot-right"
+    ;
+    margin: 0;
+    text-align:center;
+    height: 100vh;
+    overflow: hidden;
+    }
+
+    main {
+    grid-area: main;
+    animation: Opc 3s forwards;
+    background: url(/pho-caribean/london.jpg);
+    background-position: center;
+    background-size:cover;
+    }
+
+    section.yum-yum{
+    grid-area: yum-yum;
+    background: url(/pho-caribean/finland.jpg);
+    background-size:cover;
+    }
+
+    section.foot-left{
+    grid-area: foot-left;
+    background: url(/pho-caribean/4cuba.jpg);
+    background-size:cover;
+    }
+
+    section.foot-right {
+    grid-area: foot-right;
+    background: url(/pho-caribean/1.jpg);
+    }
+
+    /* Grid-container#2 */
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 8fr 8fr;
+    grid-template-areas:
+    "num-1 num-1 num-3 num-3"
+    "num-2 num-2 num-3 num-3"
+    ;
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+}
+
+section.num-1 {
+    grid-area: num-1;
+    background: url(/pho-europe/2roma.jpg);
+    background-size:cover;
+}
+section.num-2 {
+    grid-area: num-2;
+    background: url(/pho-europe/3venice.jpg);
+    background-size:cover;
+}
+section.num-3 {
+    grid-area: num-3;
+    background: url(/pho-europe/1paris.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+    /* Grid-container#3 */
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 8fr 8fr;
+    grid-template-areas:
+    "num-4 num-4 num-5 num-5"
+    "num-4 num-4 num-6 num-6";
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+}
+
+section.num-4 {
+    grid-area: num-4;
+    background-size:cover;
+    background: url(/pho-africa/Ghana.jpg);
+    background-position: center;
+}
+section.num-5 {
+    grid-area: num-5;
+    background: url(/pho-africa/tanzania.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section.num-6 {
+    grid-area: num-6;
+    background: url(/pho-africa/congo.jpg);
+    background-size:cover;
+}
+
+body {
+    animation: fadeIn 2s forwards;
+}
+
+section {
+    animation: Opc 3s forwards;
+}
+
+@keyframes fadeIn {
+    from{
+        transform: translateY(-2em);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes Opc {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* media querry */
+
+@media (min-width: 1278px) {
+
+    .nav-var a.main-link {
+        margin-right: 16em;
+    }
+
+}
+@media (min-width: 1440px) {
+
+    .nav-var a.main-link {
+        margin-right: 20em;
+    }
+
+}
+@media (min-width: 1920px) {
+
+    .nav-var a.main-link {
+        margin-right: 32em;
+    }
+
+}

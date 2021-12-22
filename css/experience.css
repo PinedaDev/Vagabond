@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/*
+Fonts
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto Mono', monospace;
+*/
+
+body {
+    background: rgb(41, 39, 39);
+    margin: 0;
+}
+
+/*Navegation var styles*/
+.nav-var {
+    background:rgb(29, 28, 28);
+    border: none;
+}
+
+.nav-var a {
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    margin-left:8px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+}
+
+.nav-var a:hover {
+    color: rgb(255, 30, 30);
+}
+
+.nav-var a.main-link {
+    font-family: 'Permanent Marker', cursive;
+    margin-right: 10em;
+    font-size: 2.6em;
+    text-shadow: 2px 2px rgba(0,0,0,.4);
+    padding-left: 2cm;
+    color: rgb(255, 30, 30);
+    text-transform: none;
+    text-decoration: none;
+}
+.nav-var a.main-link:hover {
+    text-transform: none;
+    color: rgb(190, 33, 33);
+    text-shadow: 2px 2px rgba(0,0,0,.4);
+}
+
+.section {
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1cm;
+    font-size: 20px;
+}
+
+img {
+    border-radius:30em; 
+    height: 30vh; 
+    margin: 0 1cm .5cm 1cm; 
+    float: left;
+}
+
+
+/*media querries*/
+
+@media (min-width: 1278px) {
+
+    .nav-var a.main-link {
+        margin-right: 16em;
+    }
+  
+  }
+  @media (min-width: 1440px) {
+  
+    .nav-var a.main-link {
+        margin-right: 20em;
+    }
+  
+  }
+  @media (min-width: 1920px) {
+  
+    .nav-var a.main-link {
+        margin-right: 32em;
+    }
+  
+  }

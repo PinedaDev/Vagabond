@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagabond</title>
+    <link rel="stylesheet" href="/css/main - v1.2.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+    div.divisiones {
+        height: 2px;
+        background: white;
+        margin: .5cm 1cm .5cm 1cm;
+    }
+</style>
+
+<body>
+
+    <div class="top-section">
+        <div class="nav-var">
+            <a href="" class="main-link">My first Page</a>
+
+            <!-- Drop button-->
+
+            <div class="dropdown">
+                <button class="dropbtn">Destinations</button>
+
+                <div class="dropdown-content">
+                    <a href="/html/dest-cub.html">Cuba</a>
+                    <a href="/html/dest-ind.html">India</a>
+                    <a href="/html/dest-uga.html">Uganda</a>
+                </div>
+
+            </div>
+
+            <!-- other links -->
+
+            <a href="/html/gallery.html" target="_self">Gallery</a>
+            <a href="/html/experiences.html" target="_self">Experiences</a>
+            <a href="#Co">Contact</a>
+        </div>
+
+        <h1 style="color: white;">Abraham Pineda.</h1>
+        <p style="color: rgb(255, 255, 255);">My first Page sit amet consectetur adipisicing elit. Voluptatibus nam
+            ullam saepe praesentium neque atque rem rerum aut nostrum velit veniam pariatur distinctio maxime
+            blanditiis, magni laboriosam deserunt animi aliquam repellendus doloremque dolores tempora sit unde! Minima,
+            quaerat aliquid dolore iste vel laboriosam sint? A.</p>
+    </div>
+    <div class="divisiones"></div>
+    <h2 style="color: white;">A New Experience</h2>
+    <div class="divisiones"></div>
+    <!--Bottom Section-->
+    <div class="bottom-section">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="/pho-extra/header-bg.jpg" style="width:100%">
+                <div class="text">Australia</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="/pho-cuba/Alejandro de Humboldt .jpg" style="width:100%">
+                <div class="text">Cuba</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="/pho-extra/extra-pict.jpg" style="width:100%">
+                <div class="text">Bahamas</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <div class="divisiones"></div>
+        <div class="contact-section">
+            <ul id="Co" class="contact-list">
+                <Caption>Contact-Info:</Caption>
+                <li>phone-number:+358 123 123 123</li>
+                <li>Email: exampleemail@gmail.com</li>
+                <li>Location: RandomCity</li>
+            </ul>
+        </div>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-4x"></i></a>
+        <a href="https://www.instagram.com/" target="_blanck"><i class="fab fa-instagram fa-4x"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-youtube fa-4x"></i></a>
+        <div class="divisiones"></div>
+    </div>
+
+</body>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+</html>

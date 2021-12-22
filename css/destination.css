@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+/*Fonts
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto Mono', monospace;
+*/
+
+body {
+    background: rgb(12, 12, 12);
+    margin: 0;
+}
+
+/*Navegation var styles*/
+.nav-var {
+    background:rgb(29, 28, 28);
+    border: none;
+}
+
+.nav-var a {
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    margin-left:8px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+}
+
+.nav-var a:hover {
+    color: rgb(255, 30, 30);
+}
+
+.nav-var a.main-link {
+    font-family: 'Permanent Marker', cursive;
+    margin-right: 10em;
+    font-size: 2.6em;
+    text-shadow: 2px 2px rgba(0,0,0,.4);
+    padding-left: 2cm;
+    color: rgb(255, 30, 30);
+    text-transform: none;
+    text-decoration: none;
+}
+.nav-var a.main-link:hover {
+    text-transform: none;
+    color: rgb(190, 33, 33);
+    text-shadow: 2px 2px rgba(0,0,0,.4);
+}
+
+/*drop-btn*/
+
+/* Dropdown Button */
+.dropbtn {
+  background: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.3em;
+  margin-left:8px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  margin-left: .5cm;
+  position: absolute;
+  background-color: rgba(253, 253, 253, 0.5);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-decoration: none;
+  color: rgb(29, 28, 28);
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: none;
+    color: rgb(255, 28, 28);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  border-radius: .5em;
+}
+
+.dropdown:hover .dropbtn {color: rgb(255, 28, 28);}
+
+/* animation */
+
+.section {
+  animation: fadeIn 2s forwards;
+}
+
+.section img {
+  animation: comingIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+    transform: translateX(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes comingIn{
+  from{
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*media querries*/
+
+@media (min-width: 1278px) {
+
+  .nav-var a.main-link {
+      margin-right: 16em;
+  }
+
+}
+@media (min-width: 1440px) {
+
+  .nav-var a.main-link {
+      margin-right: 20em;
+  }
+
+}
+@media (min-width: 1920px) {
+
+  .nav-var a.main-link {
+      margin-right: 32em;
+  }
+
+}
